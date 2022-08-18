@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HYPEKET</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/h.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Squada+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Inter:wght@300&family=Mukta:wght@400;500&family=Orbitron:wght@600&family=Squada+One&family=Staatliches&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <!--Desarrollo del "header 1": Nombre de la pagina, input de busqueda y botones login-sign up-->
+        <div class="container-navbar1">
+            <div>
+                <p class="logo-navbar1">HYPEKET</p>
+            </div>
+            <div class="search-box">
+                <form action="">
+                    <input placeholder="Buscar por marca" type="text">
+                    <button type="submit"><img height="20px" src="images/search-interface-symbol.png" alt=""></button>
+                </form>
+            </div>
+            <div class="navbar1-buttons">
+                <button class="login-button">Login</button>
+
+                <button class="signup-button">Sign Up</button>
+            </div>
+
+        </div>
+        <!--Desarrollo del "header 2": consta de las categorias que conforman el main de la pagina web-->
+        <div class="container-navbar2">
+            <div class="news">
+                <a class="news-link" href="#news-link">News</a>
+            </div>
+            <!-- Cada categoria (excepto 'news') tendra subcategorias desplegables: dropdown-->
+            <!-- Ej: la categoria Sneakers estara contenida en un boton con un link para direccionar dentro de la misma pagina -->
+            <div class="dropdown">   
+                <a href="#sneakers-link"><button class="buttons">Sneakers
+                        <img class="img-arrow" src="images/arrow-down-sign-to-navigate.png" alt="">
+                    </button></a>
+                    <!-- en la etiqeta 'dropdown-content' se conentran las subcategorias pertenecientes a cada categoria (en este caso, Snekaers) -->
+                <div class="dropdown-content">
+                    <a href="#">Adidas</a>
+                    <a href="#">Air Jordan</a>
+                    <a href="#">Nike</a>
+                    <a href="#">New Balance</a>
+                    <a href="#">Reebok</a>
+                    <a href="#">Converse</a>
+                    <a href="#">Puma</a>
+                    <a href="#">Vans</a>
+                    <a href="#">Luxury Brands</a>
+                </div>
+            </div>
+            <!-- De igual manera se repite para las categorias restantes: Apparel, Collectibles y Accesories -->
+            <div class="dropdown">
+                <a href="#apparel-link"><button class="buttons">Apparel
+                        <img class="img-arrow" src="images/arrow-down-sign-to-navigate.png" alt="">
+                    </button></a>
+                <div class="dropdown-content">
+                    <a href="#">BAPE</a>
+                    <a href="#">Essentials</a>
+                    <a href="#">Fear of God</a>
+                    <a href="#">Gucci</a>
+                    <a href="#">KAWS</a>
+                    <a href="#">Kith</a>
+                    <a href="#">Moncler</a>
+                    <a href="#">Off-White</a>
+                    <a href="#">Palace</a>
+                    <a href="#">Supreme</a>
+                    <a href="#">The North Face</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#collectibles-link"><button class="buttons">Collectibles
+                        <img class="img-arrow" src="images/arrow-down-sign-to-navigate.png" alt="">
+                    </button></a>
+                <div class="dropdown-content">
+                    <a href="#">KAWS</a>
+                    <a href="#">Bearbrick</a>
+                    <a href="#">LEGO</a>
+                    <a href="#">Funko Pop!</a>
+                    <a href="#">Takashi Murakami</a>
+                    <a href="#">Virgil Abloh</a>
+                    <a href="#">Skate Decks</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#accesories-link"><button class="buttons">Accesories
+                        <img class="img-arrow" src="images/arrow-down-sign-to-navigate.png" alt="">
+                    </button></a>
+                <div class="dropdown-content">
+                    <a href="#">Balenciaga</a>
+                    <a href="#">BAPE</a>
+                    <a href="#">Burberry</a>
+                    <a href="#">Chanel</a>
+                    <a href="#">Dior</a>
+                    <a href="#">Gucci</a>
+                    <a href="#">Louis Vuitton</a>
+                    <a href="#">Prada</a>
+                    <a href="#">Rolex</a>
+                    <a href="#">Saint Laurent</a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </header>
+    <main>
+        <div class="up-row">
+            <a href=""><img height="30px" src="images/up-arrow.png" alt=""></a>
+        </div>
+        <div class="box-container-palm">
+            <div class="container-palm">
+                <img class="img-palm" src="images/palm.jpeg" alt="">
+                <div class="overlay">What is Palm Angels? Read Now</div>
+            </div>
+        </div>
+        <div class="nav-news">
+            <p id="news-link">News</p>
+        </div>
+        <div class="container-all-news">
+            <div class="container-new">
+                <a href="">
+                    <div class="container-imgnew">
+                        <img class="img-new" src="images/new1.png" alt="">
+                    </div>
+                    <div class="container-text-author">
+                        <p class="text">Stüssy x CPFM 8 Ball Hoodie: HYPEKET Pick of the Week</p>
+                        <p class="author">Nick Matthies- 29/07/2022</p>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="container-new">
+                <a href="">
+                    <div class="container-imgnew">
+                        <img class="img-new" src="images/new2.png" alt="">
+                    </div>
+                    <div class="container-text-author">
+                        <p class="text">
+                            A Perfect Fit: Salomon XT-6 White Lunar Rock</p>
+                        <p class="author">Elhadji Mare- 29/07/2022</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="container-new">
+                <a href="">
+                    <div class="container-imgnew">
+                        <img class="img-new" src="images/new3.png" alt="">
+                    </div>
+                    <div class="container-text-author">
+                        <p class="text">
+                            Best Saint Laurent Bags on StockX</p>
+                        <p class="author">Exsar Arguello- 29/07/2022</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="container-new">
+                <a href="">
+                    <div class="container-imgnew">
+                        <img class="img-new" src="images/new4.png" alt="">
+                    </div>
+                    <div class="container-text-author">
+                        <p class="text">
+                            If You're a Fan of Yeezys...</p>
+                        <p class="author">Elhadji Mare- 26/07/2022
+
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="nav-news">
+            <p id="sneakers-link">Sneakers</p>
+        </div>
+        <div class="sneakerrow">
+            <div class="snkrs">
+                <img class="snkr-img" src="images/snkr1.png" alt="">
+                <p>Jordan 1 Retro High OG Bleached Coral</p>
+                <p class="om">Oferta minima</p>
+                <p class="price">U$D 195</p>
+            </div>
+            <div class="snkrs">
+                <img class="snkr-img" src="images/snkr2.png" alt="">
+                <p>Nike Dunk Low Retro White Black Panda (2021)</p>
+                <p class="om">Oferta minima</p>
+                <p class="price">U$D 183</p>
+            </div>
+            <div class="snkrs">
+                <img class="snkr-img" src="images/snkr3.png" alt="">
+                <p>Adidas Yeezy Slide Pure (Restock Pair)</p>
+                <p class="om">Oferta minima</p>
+                <p class="price">U$D 134</p>
+            </div>
+            <div class="snkrs">
+                <img class="snkr-img" src="images/snkr4.png" alt="">
+                <p>Jordan 4 Retro Military Black</p>
+                <p class="om">Oferta minima</p>
+                <p class="price">U$D 271</p>
+            </div>
+        </div>
+        <div class="nav-news">
+            <p id="apparel-link">Apparel</p>
+        </div>
+        <div class="sneakerrow">
+            <div class="snkrs">
+                <img class="snkr-img" src="images/ap1.png" alt="">
+                <p>Fear of God Essentials Knit Pullover Hoodie Harvest</p>
+                <p class="om">Oferta minima</p>
+                <p class="price">U$D 152</p>
+            </div>
+            <div class="snkrs">
+                <img class="snkr-img" src="images/ap2.png" alt="">
+                <p>Drew house mascot hoodie golden yellow</p>
+                <p class="om">Oferta minima</p>
+                <p class="price">U$D 145</p>
+            </div>
+            <div class="snkrs">
+                <img class="snkr-img" src="images/ap3.png" alt="">
+                <p>Off-White x Jordan Hoodie White</p>
+                <p class="om">Oferta minima</p>
+                <p class="price">U$D 350</p>
+            </div>
+            <div class="snkrs">
+                <img class="snkr-img" src="images/ap4.png" alt="">
+                <p>Gucci GG Jacquard Cotton Jacket Blue/Ivory</p>
+                <p class="om">Oferta minima</p>
+                <p class="price">U$D 1543</p>
+            </div>
+        </div>
+        <div class="nav-news">
+            <p id="collectibles-link">Collectibles</p>
+        </div>
+        <div class="sneakerrow">
+            <div class="snkrs">
+                <img class="snkr-img" src="images/ap13.png" alt="">
+                <p>Louis Vuitton Slender Wallet Monogram Eclipse</p>
+                <p class="om">Oferta minima</p>
+                <p class="price">U$D 476</p>
+            </div>
+            <div class="snkrs">
+                <img class="snkr-img" src="images/ap14.png" alt="">
+                <p>Gucci Belt Bag GG Supreme Canvas Small Beige/Black</p>
+                <p class="om">Oferta minima</p>
+                <p class="price">U$D 591</p>
+            </div>
+            <div class="snkrs">
+                <img class="snkr-img" src="images/ap15.png" alt="">
+                <p>Dior Oblique Saddle Bag Black</p>
+                <p class="om">Oferta minima</p>
+                <p class="price">U$D 2856</p>
+            </div>
+            <div class="snkrs">
+                <img class="snkr-img" src="images/ap16.png" alt="">
+                <p>Louis Vuitton 1.1 Millionaires Sunglasses Black</p>
+                <p class="om">Oferta minima</p>
+                <p class="price">U$D 775</p>
+            </div>
+        </div>
+        <div class="nav-news">
+            <p id="accesories-link">Accesories</p>
+        </div>
+        <div class="sneakerrow">
+            <div class="snkrs">
+                <img class="snkr-img" src="images/ap17.png" alt="">
+                <p>KAWS Holiday Taipei Vinyl Figure Brown</p>
+                <p class="om">Oferta minima</p>
+                <p class="price">U$D 450</p>
+            </div>
+            <div class="snkrs">
+                <img class="snkr-img" src="images/ap18.png" alt="">
+                <p>Bearbrick Michael Jordan 1985 Set
+                    Gold Chrome</p>
+                <p class="om">Oferta minima</p>
+                <p class="price">U$D 595</p>
+            </div>
+            <div class="snkrs">
+                <img class="snkr-img" src="images/ap19.png" alt="">
+                <p>Takashi Murakami Flower Plush 30CM</p>
+                <p class="om">Oferta minima</p>
+                <p class="price">U$D 114</p>
+            </div>
+            <div class="snkrs">
+                <img class="snkr-img" src="images/ap20.png" alt="">
+                <p>Virgil Abloh x IKEA "KEEP OFF" Rug 200x300 CM
+                    Grey/White</p>
+                <p class="om">Oferta minima</p>
+                <p class="price">U$D 2350</p>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+
+        <div class="categories-footer">
+            <div class="air-jordan">
+                <a class="air-jordan-title" href="">Air Jordan</a>
+                <a class="air-jordan-content" href="">Air Jordan 1</a>
+                <a class="air-jordan-content" href="">Air Jordan 3</a>
+                <a class="air-jordan-content" href="">Air Jordan 4</a>
+                <a class="air-jordan-content" href="">Air Jordan 5</a>
+                <a class="air-jordan-content" href="">Air Jordan 11</a>
+                <a class="air-jordan-content" href="">Jordan 1 Mid</a>
+
+            </div>
+            <div class="air-jordan">
+                <a class="air-jordan-title" href="">Yeezy</a>
+                <a class="air-jordan-content" href="">Yeezy Boost 350</a>
+                <a class="air-jordan-content" href="">Yeezy Boost 350 V2</a>
+                <a class="air-jordan-content" href="">Yeezy Boost 700</a>
+                <a class="air-jordan-content" href="">Yeezy 500</a>
+                <a class="air-jordan-content" href="">Yeezy Slides</a>
+                <a class="air-jordan-content" href="">Yeezy Foam RNNR</a>
+
+            </div>
+            <div class="air-jordan">
+                <a class="air-jordan-title" href="">Nike</a>
+                <a class="air-jordan-content" href="">Nike Dunks</a>
+                <a class="air-jordan-content" href="">Air Force 1</a>
+                <a class="air-jordan-content" href="">Air Max 1</a>
+                <a class="air-jordan-content" href="">SB Dunk</a>
+                <a class="air-jordan-content" href="">Air Max 95</a>
+                <a class="air-jordan-content" href="">Nike x sacai</a>
+
+            </div>
+            <div class="air-jordan">
+                <a class="air-jordan-title" href="">Popular Releases</a>
+                <a class="air-jordan-content" href="">Jordan 4 Military Black</a>
+                <a class="air-jordan-content" href="">Telfar Shopping Bag Small</a>
+                <a class="air-jordan-content" href="">Swatch x Omega Moonswatch</a>
+                <a class="air-jordan-content" href="">Corteiz Alcatraz Hoodie</a>
+                <a class="air-jordan-content" href="">Jordan 1 Travis Scott Reverse Mocha</a>
+
+            </div>
+            <div class="app-container">
+                <p>Download our app</p>
+                <img class="app-down" src="images/app.png" alt="">
+                <img class="app-down" src="images/google.png" alt="">
+            </div>
+
+
+        </div>
+        <hr class="line">
+        <div class="footer-copyright">
+            <p>2022 HYPEKET Limited . All Rights Reserved.HYPEKET® is a registered trademark of Hypeket Argentina Ltd.
+            </p>
+        </div>
+
+
+
+    </footer>
+
+</body>
+
+</html>
